@@ -1,0 +1,17 @@
+@import url("styles/other.css");
+
+:root {
+  --main-color: blue;
+}
+
+body {
+  font-size: 24px;
+}
+
+.root {
+  color: red;
+}
+
+.css-variable {
+  color: var(--main-color);
+}
