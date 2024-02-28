@@ -4,6 +4,14 @@ import 'styles/index.css'
 import classes from 'styles/test.module.css'
 import 'styles/test.less'
 
+import test from './test?raw'
+
+import logo from './assets/vue.svg'
+
+import {a} from './test'
+
+console.log(test)
+
 export default defineComponent({
   setup() {
     return () => {
@@ -13,6 +21,8 @@ export default defineComponent({
         <div class="div">css @import</div>
         <div class={`${classes.moduleClass}`}>css module</div>
         <div class="div1">css pre-processors</div>
+        <div>hello {a.name} {a.age}</div>
+        <div><img src={logo} /></div>
       </>)
     }
   }
