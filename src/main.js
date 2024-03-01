@@ -12,4 +12,6 @@ import pkg from '../package.json'
 
 console.log(pkg)
 
+console.log(import.meta.env)
+
 createApp(App).mount('#app')
